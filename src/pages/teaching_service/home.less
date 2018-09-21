@@ -1,0 +1,123 @@
+@import "../../assets/css/main.less";
+
+.teach_container {
+  .tip {
+    .pos(r);
+    height: 20px;
+    width: 100%;
+    background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/hentiao@2x.png) no-repeat;
+    background-size: 100%;
+    p {
+      font-family: PingFangSC-Medium;
+      font-size: 12px;
+      color: #FFFFFF;
+      letter-spacing: 0;
+      line-height: 20px;
+      padding-left: 20px;
+    }
+    .close_btn {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      .pos(a);
+      right: 7.5px;
+      top: 2px;
+      background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon-x@3x.png) no-repeat;
+      background-size: 100%;
+      z-index: 99;
+      background-size: 14px;
+    }
+  }
+  .swiper-cont {
+    width: 100%;
+    height: 152px;
+    overflow: hidden;
+    img {
+      width: 100%;
+    }
+    .mint-swipe-indicators {
+      .mint-swipe-indicator {
+        opacity: 1;
+        width: 16px;
+        height: 2px;
+        background: @red_color;
+      }
+      div.is-active {
+        width: 16px;
+        height: 2px;
+        background: @red_color;
+      }
+    }
+  }
+  //列表页面
+  .list_container {
+    padding: 5px 20px 20px;
+    ul {
+      li {
+
+        list-style: none;
+        padding-top: 20px;
+        .border;
+        .item_cont {
+          padding-bottom: 7px;
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          color: @org_color;
+          text-align: right;
+          p{
+            display:inline-block;
+          }
+          .share-btn{
+            display: inline-block;
+            height:20px;
+            font-family: PingFangSC-Medium;
+            font-size: 12px;
+            color: #FFFFFF;
+            line-height: 20px;
+            background: #DF3031;
+            border-radius: 2px;
+            text-align: center;
+            margin-left:4px;
+            padding:0 4px;
+          }
+          .desc_cont {
+            display: flex;
+            text-align: left;
+            padding-bottom: 3px;
+            .desc_left {
+              flex-basis: 60px;
+              width: 60px;
+              margin-right: 10px;
+              img {
+                width: 100%;
+                height: 60px;
+              }
+            }
+            .desc_right {
+              flex: 5.3;
+              h3 {
+                font-family: PingFangSC-Medium;
+                font-size: 16px;
+                color: @gray_color;
+                line-height: 18px;
+                margin-bottom: 8px;
+                .nospace(@line:1);
+              }
+              p {
+
+                font-family: PingFangSC-Regular;
+                font-size: 12px;
+                color: @gray_color;
+                letter-spacing: 0;
+                text-align: justify;
+                line-height: 16px;
+                .nospace(@line:2);
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

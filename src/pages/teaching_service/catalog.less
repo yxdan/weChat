@@ -1,0 +1,528 @@
+@import "../../assets/css/main.less";
+.catalog_cont{
+  padding-bottom:50px;
+  background: #f3f3f3;
+  .cata_header{
+    background: #fff;
+    .banner{
+      .pos(r);
+      height:152px;
+      .img_cont{
+        height:152px;
+        width:100%;
+        .pos(r);
+        img{
+          width:100%;
+          height:152px;
+          background-size: 100%;
+        }
+        .img_bg{
+          width:100%;
+          height:100%;
+          .pos(a);
+          top:0;
+          left:0;
+          background: rgba(0,0,0,.4);
+        }
+      }
+      h3{
+        padding-right:20px;
+        height:18px;
+        font-family: PingFangSC-Medium;
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 18px;
+        .pos(a);
+        bottom:45px;
+        left:20px;
+        .nospace(@line: 1);
+      }
+      p{
+        padding-right:20px;
+        font-family: PingFangSC-Regular;
+        height:16px;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: justify;
+        line-height: 16px;
+        .pos(a);
+        bottom:23px;
+        left:20px;
+        .nospace(@line: 1);
+      }
+      .jpkt,.mfkt{
+        width:70px;
+        height:30px;
+        line-height:30px;
+        display:inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        .pos(a);
+        right:0px;
+      }
+      .jpkt{
+        background:@org_color;
+        top:20px;
+      }
+      .mfkt{
+        background: #2086CF;
+        bottom:60px;
+      }
+    }
+  }
+  .total_course{
+    .border;
+    ul{
+      display:flex;
+      padding:10px 0 15px;
+      li{
+        flex:1;
+        border-right:1px solid #e7e7e7;
+        text-align: center;
+        p{
+          font-family: PingFangSC-Regular;
+          font-size: 10px;
+          color: #949494;
+          letter-spacing: 0;
+          text-align: justify;
+          line-height: 12px;
+          margin-bottom:3px;
+          text-align: center;
+        }
+        b{
+          font-family: PingFangSC-Medium;
+          font-size: 16px;
+          color: @gray_color;
+          letter-spacing: 0;
+          text-align: justify;
+          line-height: 16px;
+          span{
+            font-family: PingFangSC-Regular;
+            font-size: 10px;
+            color: #160000;
+            letter-spacing: 0;
+            text-align: justify;
+            line-height: 16px;
+          }
+        }
+      }
+      li:last-child{
+        border-right:none;
+      }
+    }
+  }
+  .course_bright_spot{
+    padding:20px 20px 30px;
+    margin-bottom:10px;
+    background: #fff;
+    h3{
+      padding-bottom:10px;
+      font-family: PingFangSC-Medium;
+      font-size: 18px;
+      color: @gray_color;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 18px;
+    }
+    p{
+      font-family: PingFangSC-Regular;
+      font-size: 14px;
+      color: @gray_color;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 22px;
+    }
+    p.fold{
+      .nospace(@line:5);
+    }
+    p.unfold{
+      .nospace(@line:200);
+    }
+    .show_cont{
+      .show{
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: @gray_color;
+        letter-spacing: 0;
+        text-align: right;
+        line-height: 22px;
+      }
+    }
+  }
+  .course_directory{
+    margin-bottom:10px;
+    padding:20px 0 0;
+    background: #fff;
+    h3{
+      padding:0 20px;
+      font-family: PingFangSC-Medium;
+      font-size: 18px;
+      color: @gray_color;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 18px;
+    }
+    ul{
+      li{
+        position:relative;
+        padding:20px 0px 18px;
+        margin: 0 20px;
+        .border;
+        h4{
+          font-family: PingFangSC-Medium;
+          font-size: 16px;
+          color: @gray_color;
+          letter-spacing: 0;
+          text-align: justify;
+          line-height: 16px;
+          .nospace(@line:1);
+        }
+        .read {
+          display:none;
+        }
+        &:last-child{
+          border-right:none;
+        }
+      }
+      li:last-child{
+        border-right:none;
+      }
+    }
+    .readCont{
+      .read {
+        position: absolute;
+        bottom: 18px;
+        right: -20px;
+        width: 41px;
+        height: 16px;
+        display: inline-block;
+        background: @org_color;
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 16px;
+        opacity: 1;
+      }
+    }
+  }
+  .load_more,.no_more_data{
+    margin-bottom:10px;
+    height:35px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #2086CF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 35px;
+  }
+  .no_more_data{
+    color: #979797;
+  }
+  //底部购买
+  .bottom_btn_lock {
+    .pos(f);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    ul {
+      display: flex;
+      li {
+        flex: 1.5;
+        height: 50px;
+        text-align: center;
+        .pos(r);
+        .lock_icon, .share_icon {
+          margin-right: 5px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          line-height: 50px;
+        }
+        .lock_icon {
+          .pos(a);
+          bottom:18px;
+          left:16px;
+          background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon-suo1@3x.png) bottom center no-repeat;
+          background-size: 16px;
+        }
+        .share_icon {
+          .pos(a);
+          bottom:17px;
+          left:26px;
+          background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon-fx2@3x.png) bottom center no-repeat;
+          background-size: 16px;
+        }
+        p {
+          display: inline-block;
+          font-family: PingFangSC-Medium;
+          font-size: 14px;
+          color: #FD6D44;
+          line-height: 50px;
+          span {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+          }
+
+        }
+      }
+      li:first-child {
+        padding-left: 10px;
+        background: #fff;
+      }
+      li:last-child {
+        background: @red_color;
+        padding-left:10px ;
+        p {
+          color: #fff;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+  .guide{
+    z-index:99999;
+    width:100%;
+    height:100%;
+    .pos(f);
+    top:0;
+    left:0;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+  //popup
+  .mint-popup-bottom {
+    width: 100%;
+    z-index:99;
+  }
+  .confirm_order {
+    div {
+      .border;
+    }
+    div:last-child {
+      border-bottom: 0;
+    }
+    .header {
+      padding: 11px 20px;
+      position: relative;
+      text-align: center;
+      .icon_close {
+        position: absolute;
+        left: 15px;
+        top: 13px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/order_close@3x.png) bottom center no-repeat;
+        background-size: 100%;
+        text-align: left;
+      }
+      p {
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+        line-height: 18px;
+      }
+    }
+    .order_info {
+      padding: 17px 20px;
+      display: flex;
+      h4{
+        flex: 3;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+        line-height: 16px;
+        font-weight:normal !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+      }
+      p {
+        flex: 1;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        color: @red_color;
+        letter-spacing: 0;
+        text-align: right;
+        line-height: 16px
+      }
+    }
+    .choose {
+      padding: 17px 20px;
+      display: flex;
+      .xuangou {
+        flex:1;
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+      }
+      ul {
+        .pos(r);
+        flex:1.3;
+        li:nth-child(1) {
+          width:60px;
+          p {
+            width: 40px;
+            height: 24px;
+            .pos(r);
+            background: @red_color;
+            .border_radius;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 24px;
+            text-align: center;
+            sup {
+              .pos(a);
+              top: -8px;
+              left: 12px;
+              width: 43px;
+              height: 12px;
+              font-family: PingFangSC-Regular;
+              font-size: 8px;
+              color: #FFFFFF;
+              letter-spacing: 0;
+              line-height: 12px;
+              background: @org_color;
+              .border_radius(@radius:6px)
+            }
+          }
+        }
+        li:last-child {
+          .pos(a);
+          right:0px;
+          top:0px;
+          width:100px;
+          .border_radius();
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: @gray_color;
+          letter-spacing: 0;
+          line-height: 24px;
+          text-align: center;
+          border:1px solid #343434;
+        }
+      }
+    }
+    .discount, .pay_method {
+      padding: 17px 20px;
+      display: flex;
+      p {
+        flex: 1;
+      }
+      p:nth-child(1) {
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+        line-height: 16px;
+        text-align: left;
+      }
+      p:last-child {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #ACACAC;
+        letter-spacing: 0;
+        text-align: right;
+        line-height: 14px;
+      }
+    }
+    .pay_method {
+      p:first-child {
+        flex: 4;
+        line-height: 24px;
+      }
+      p{
+        img{
+          width:100%;
+        }
+      }
+    }
+    .order_bottom {
+      padding: 16px 20px 20px;
+      .pay_cont {
+        display: flex;
+        p {
+          flex: 1.7;
+          font-family: PingFangSC-Medium;
+          font-size: 18px;
+          color: @gray_color;
+          line-height: 34px;
+          span {
+            font-family: PingFangSC-Medium;
+            font-size: 16px;
+            color: @red_color;
+          }
+        }
+        .ljzf {
+          flex: 1;
+          width: 117px;
+          height: 34px;
+          background: @red_color;
+          border-radius: 4px;
+          color: #fff;
+          text-align: center;
+        }
+        .norbtn{
+          background: #ACACAC;
+          flex: 1;
+          width: 117px;
+          height: 34px;
+          border-radius: 4px;
+          color: #fff;
+          text-align: center
+        }
+
+      }
+      .radio{
+        position:relative;
+        top:3px;
+        display:inline-block;
+        width:16px;
+        height:16px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon_duigou_nor@3x.png) bottom center no-repeat;
+        background-size: 100%;
+      }
+      .now,.now2{
+        position:relative;
+        top:3px;
+        display:inline-block;
+        width:16px;
+        height:16px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/red@3x.png) bottom center no-repeat;
+        background-size: 100%;
+      }
+      label{
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #949494;
+        letter-spacing: 0;
+        line-height: 14px;
+        span{
+          font-family: PingFangSC-Medium;
+          font-size: 12px;
+          color: #5ba3d5;
+          letter-spacing: 0;
+          line-height: 14px;
+        }
+      }
+    }
+
+  }
+}
