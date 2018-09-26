@@ -1,0 +1,402 @@
+@import "../../assets/css/main.less";
+
+.detail_cont {
+  .header {
+    padding: 16px 20px 20px;
+    color: @red_color;
+    h4 {
+      font-family: PingFangSC-Semibold;
+      font-size: 24px;
+      color: @gray_color;
+      letter-spacing: 0.7px;
+      text-align: justify;
+      line-height: 32px;
+      .nospace(@line:1);
+    }
+    p {
+      font-family: PingFangSC-Regular;
+      font-size: 12px;
+      color: #AEAEAE;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+  }
+  .main_cont {
+    padding: 0 15px;
+    .main_desc {
+      font-family: PingFangSC-Regular;
+      font-size: 18px;
+      color: @gray_color;
+      letter-spacing: 0.8px;
+      line-height: 30px;
+      .nospace(@line:4);
+      p{
+        .nospace(@line:4);
+      }
+    }
+    // 未购买
+    .unlock {
+      font-family: PingFangSC-Regular;
+      font-size: 16px;
+      color: @red_color;
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 16px;
+      margin-top: 10px;
+      .unlock_icon {
+        display: inline-block;
+        width: 17px;
+        height: 19px;
+        margin-bottom: 5px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon-suo2@3x.png) bottom center no-repeat;
+        background-size: 100%;
+      }
+    }
+    //已购买
+    .lock {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      font-family: PingFangSC-Regular;
+      font-size: 18px;
+      color: @gray_color;
+      letter-spacing: 0.8px;
+      line-height: 30px;
+    }
+  }
+  .other_course {
+    padding: 60px 20px;
+    h3 {
+      font-family: PingFangSC-Medium;
+      font-size: 18px;
+      color: @gray_color;
+      letter-spacing: 0;
+      text-align: justify;
+      line-height: 18px;
+    }
+    ul {
+      li {
+        padding-top: 20px;
+        h4 {
+          font-family: PingFangSC-Medium;
+          font-size: 16px;
+          color: @gray_color;
+          letter-spacing: 0;
+          text-align: justify;
+          line-height: 24px;
+          margin-bottom: 4px;
+          .nospace(@line:1);
+        }
+        p {
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: @gray_color;
+          letter-spacing: 0;
+          text-align: justify;
+          line-height: 21px;
+          .nospace(@line:2);
+        }
+      }
+    }
+  }
+  .bottom_btn_lock {
+    .pos(f);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    ul {
+      display: flex;
+      li {
+        flex: 1.5;
+        height: 50px;
+        text-align: center;
+        .pos(r);
+        .lock_icon, .share_icon {
+          margin-right: 5px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          line-height: 50px;
+        }
+        .lock_icon {
+          .pos(a);
+          bottom:18px;
+          left:16px;
+          background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon-suo1@3x.png) bottom center no-repeat;
+          background-size: 16px;
+        }
+        .share_icon {
+          .pos(a);
+          bottom:17px;
+          left:26px;
+          background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon-fx2@3x.png) bottom center no-repeat;
+          background-size: 16px;
+        }
+        p {
+          display: inline-block;
+          font-family: PingFangSC-Medium;
+          font-size: 14px;
+          color: #FD6D44;
+          line-height: 50px;
+          span {
+            font-family: PingFangSC-Regular;
+            font-size: 12px;
+          }
+
+        }
+      }
+      li:first-child {
+        padding-left: 10px;
+        background: #fff;
+      }
+      li:last-child {
+        background: @red_color;
+        padding-left:10px ;
+        p {
+          color: #fff;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+  //popup
+  .mint-popup-bottom {
+    width: 100%;
+  }
+  .confirm_order {
+    div {
+      .border;
+    }
+    div:last-child {
+      border-bottom: 0;
+    }
+    .header {
+      padding: 11px 20px;
+      position: relative;
+      text-align: center;
+      .icon_close {
+        position: absolute;
+        left: 15px;
+        top: 13px;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/order_close@3x.png) bottom center no-repeat;
+        background-size: 100%;
+        text-align: left;
+      }
+      p {
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+        line-height: 18px;
+      }
+    }
+    .order_info {
+      padding: 17px 20px;
+      display: flex;
+      h4{
+        flex: 3;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+        line-height: 16px;
+        font-weight:normal !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+      }
+      p {
+        flex: 1;
+        font-family: PingFangSC-Medium;
+        font-size: 16px;
+        color: @red_color;
+        letter-spacing: 0;
+        text-align: right;
+        line-height: 16px
+      }
+    }
+    .choose {
+      padding: 17px 20px;
+      display: flex;
+      .xuangou {
+        flex:1;
+        display: inline-block;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+      }
+      ul {
+        .pos(r);
+        flex:1.3;
+        li:nth-child(1) {
+          width:60px;
+          p {
+            width: 40px;
+            height: 24px;
+            .pos(r);
+            background: @red_color;
+            .border_radius;
+            font-family: PingFangSC-Regular;
+            font-size: 14px;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: 24px;
+            text-align: center;
+            sup {
+              .pos(a);
+              top: -8px;
+              left: 12px;
+              width: 43px;
+              height: 12px;
+              font-family: PingFangSC-Regular;
+              font-size: 8px;
+              color: #FFFFFF;
+              letter-spacing: 0;
+              line-height: 12px;
+              background: @org_color;
+              .border_radius(@radius:6px)
+            }
+          }
+        }
+        li:last-child {
+          .pos(a);
+          right:0px;
+          top:0px;
+          width:100px;
+          .border_radius();
+          font-family: PingFangSC-Regular;
+          font-size: 14px;
+          color: @gray_color;
+          letter-spacing: 0;
+          line-height: 24px;
+          text-align: center;
+          border:1px solid #343434;
+        }
+      }
+    }
+    .discount, .pay_method {
+      padding: 17px 20px;
+      display: flex;
+      p {
+        flex: 1;
+      }
+      p:nth-child(1) {
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: @gray_color;
+        letter-spacing: 0;
+        line-height: 16px;
+        text-align: left;
+      }
+      p:last-child {
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #ACACAC;
+        letter-spacing: 0;
+        text-align: right;
+        line-height: 14px;
+      }
+    }
+    .pay_method {
+      p:first-child {
+        flex: 4;
+        line-height: 24px;
+      }
+      p{
+        img{
+          width:100%;
+        }
+      }
+    }
+    .order_bottom {
+      padding: 16px 20px 20px;
+      .pay_cont {
+        display: flex;
+        p {
+          flex: 1.7;
+          font-family: PingFangSC-Medium;
+          font-size: 18px;
+          color: @gray_color;
+          line-height: 34px;
+          span {
+            font-family: PingFangSC-Medium;
+            font-size: 16px;
+            color: @red_color;
+          }
+        }
+        .ljzf {
+          flex: 1;
+          width: 117px;
+          height: 34px;
+          background: @red_color;
+          border-radius: 4px;
+          color: #fff;
+          text-align: center;
+        }
+        .norbtn{
+          background: #ACACAC;
+          flex: 1;
+          width: 117px;
+          height: 34px;
+          border-radius: 4px;
+          color: #fff;
+          text-align: center
+        }
+
+      }
+      .radio{
+        position:relative;
+        top:3px;
+        display:inline-block;
+        width:16px;
+        height:16px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/icon_duigou_nor@3x.png) bottom center no-repeat;
+        background-size: 100%;
+      }
+      .now,.now2{
+        position:relative;
+        top:3px;
+        display:inline-block;
+        width:16px;
+        height:16px;
+        background: url(https://cdn1.qkzhi.com/qkz-static-production/MC-qkzhi-0.0.6/img/red@3x.png) bottom center no-repeat;
+        background-size: 100%;
+      }
+      label{
+        font-family: PingFangSC-Regular;
+        font-size: 12px;
+        color: #949494;
+        letter-spacing: 0;
+        line-height: 14px;
+        span{
+          font-family: PingFangSC-Medium;
+          font-size: 12px;
+          color: #5ba3d5;
+          letter-spacing: 0;
+          line-height: 14px;
+        }
+      }
+    }
+
+  }
+  // 引导页
+  .guide{
+    z-index:99999;
+    width:100%;
+    height:100%;
+    .pos(f);
+    top:0;
+    left:0;
+    img{
+      width:100%;
+      height:100%;
+    }
+  }
+}

@@ -85,6 +85,7 @@ export default {
             this.$api.post('api/stock/course/share/pic', args, data => {
               if (data.code === 0) {
                 this.picUrl = encodeURIComponent(data.data.picUrl)
+                console.log(88, this.picUrl)
               }
             })
           })
